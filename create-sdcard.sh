@@ -355,7 +355,7 @@ cat << EOM
 ################################################################################
 
 EOM
-	ls --sort=size $DEPLOYPATH | grep "core*rootfs" | grep 'tar.bz2' | grep -n '' | awk {'print "	" , $1'}
+	ls --sort=size $DEPLOYPATH | grep "core.*rootfs" | grep 'tar.bz2' | grep -n '' | awk {'print "	" , $1'}
 	echo ""
 	read -p "Enter Number of rootfs Tarball: " TARNUMBER
 	echo " "
